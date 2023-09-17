@@ -1,15 +1,527 @@
 body{
     margin: 0px;
+    background-color: antiquewhite;
+    font-family: 'League Spartan', sans-serif;
 }
 
-.mainDiv{
+/* Phần header */
+
+header{
+    background-color: red;
+    height: 190px;
+}
+
+.Header_Personal{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(255, 115, 45);
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 5px;
+}
+.Header_Personal ul{
+    display: flex;
+    align-items: center;
+}
+
+.Header_Personal ul li{
+    list-style: none;
+    
+}
+
+.Header_Personal ul li a{
+    text-decoration: none;
+    color: black;
+    margin: 0px 10px;
+    z-index: 20;
+}
+.Header_Personal ul li a:hover{
+    color: white;
+}
+
+.Header_Personal ul li img{
+    width: 20px;
+    transform: translateY(25%);
+    margin-right: 8px;
+    z-index: 20;
+}
+
+
+.Header_Title_Link{
+    width: 100%;
+    height: 110px;
+    background-color: rgb(234, 234, 234);
+    display: flex;
+    justify-content: space-around;
+}
+
+.Header_Title_Link .Logo_TradeMark{
+    height: 100%;
+}
+
+.Header_Title_Link .Logo_TradeMark img{
+    height: 100%;
+}
+
+.Header_Title_Link .Link_Order_Page {
+    display: flex;
+    align-items: flex-end;
+}
+
+.Header_Title_Link .Link_Order_Page ul{
+    display: flex;
+    align-content:stretch;
+    margin: 0px;
+    padding: 0px;
+    z-index: 10;
+}
+
+.Header_Title_Link .Link_Order_Page ul li{
+    list-style: none;
+    margin: 0px 10px; 
+    display: flex; 
+    align-items: center;
+    
+}
+
+
+.Header_Title_Link .Link_Order_Page ul li a{
+    text-decoration: none;
+    color: black;
+    padding-right: 20px;
+    border-right: 2px solid black;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.Header_Title_Link .Link_Order_Page ul li a:hover{
+    color: rgb(254, 107, 54);
+}
+
+.Header_Title_Link .Link_Order_Page ul li a:hover+.Link_TheLoai{
+    transform: scaleY(1);
+}
+
+.Link_TheLoai:hover{
+    transform: scaleY(1);
+}
+
+
+.Link_TheLoai{
+    position: absolute;
+    top:140px;
+    left: 110px; 
+    width:1200px;
+    height: 360px;
+    background-color: rgb(121, 115, 115);
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.8s;
+}
+
+
+.Link_TheLoai .Catgory_TheoLoai{
+    width: 400px;
+}
+.Link_TheLoai .Catgory_TheoLoai img{
+    background-color: orangered;
+    width: 100%;
+    opacity: 0.3;
+    transition: 1s;
+}
+.Link_TheLoai .Catgory_TheoLoai img:hover{
+    opacity: 1;
+}
+
+.Link_TheLoai .Catgory_TheoLoai a{
+    border-right: none !important;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.Link_TheLoai .Catgory_TheoLoai a:last-child{
+    margin-right: 0px;
+}
+
+.Header_Title_Link .Link_Order_Page ul li:last-child a{
+    border: none;
+}
+
+.Header_Title_Link .Link_Order_Page #Logo_Text_trandemark_ID{
+    height: 100px;
+}
+
+.Header_Title_Link .Search_Box {
+    display: flex;
+    align-items: center;
+}
+.Header_Title_Link .Search_Box .Cover_Search_Box{
+    height: fit-content;
+    /* background-color: red; */
+    position: relative;
+    border: 2px solid black;
+}
+
+.Header_Title_Link .Search_Box img{
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transform: translateY(-10%);
+}
+
+.Header_Title_Link .Search_Box input{
+    height: 30px;
+    width: 250px;
+    padding-left: 30px;
+    background: none;
+}
+
+.Header_Title_Dragable_Link{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(69, 68, 68);
+}
+
+.Header_Title_Dragable_Link{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Header_Title_Dragable_Link p{
+    margin: 0px;
+    font-size: medium;
+    font-weight: lighter;
+    opacity: 0.5;
+}
+
+/* phần thân */
+main{
+    width: 100%;
+    height: fit-content;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.Video_Banner_Main,video{
+    width: 100%;
+}
+
+.Video_Banner_Main{
+    overflow: hidden;
+    height: 500px;
     position: relative;
 }
 
+.Video_Banner_Main video{
+    transform: translateY(-25%);
+}
 
-h1{
-    font-size: 100px;
-    color: white;
+.mainDiv{
+    margin-top: 50px;
+    width: 90%;
+    /* background-color: blueviolet; */
+}
+
+.Main_Content_1{
+    display: flex;
+    justify-content: space-between;
+}
+.Main_Content_1 .Content_Sell_New{
+    width: 600px;
+}
+
+.Main_Content_1 .Content_Sell_New .img_div{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-color: red;
+}
+
+.Main_Content_1 .Content_Sell_New a{
+    text-decoration: none;
+    color: black;
+}
+
+.Main_Content_1 .Content_Sell_New a:hover{
+    color: orangered;
+}
+.content_text h1{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.content_text p{
+    line-height: 25px;
+}
+
+.Main_Content_1 .Content_Sell_New img{
+    width: 100%;
+}
+
+
+.Main_Content_2{
+    /* background-color: red; */
+    text-align: center;
+    margin-top: 100px;
+}
+
+.Category_Content{
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.Main_Content_2 .Category_Content_1{
+    width: 33%;
+    height: 250px;
+    /* background-color: blue; */
+    overflow: hidden;
+    position: relative;
+}
+
+.Main_Content_2 .Category_Content_1 .link{
     position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.Main_Content_2 .Category_Content_1 img{
+    opacity: 0.7;
+}
+
+.link{
+    display: flex;
+    flex-direction: column;
+}
+
+.link a{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.link a:first-child{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.link a:hover{
+    color: rgb(245, 245, 245);
+}
+
+.mainDiv_2{
+    background-color: antiquewhite;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.mainDiv_2 img{
+    width: 100%;
+}
+
+
+.New{
+    /* background-color: rebeccapurple; */
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+
+.New .Facebook_New{
+    width: 49%;
+    /* background-color: aqua; */
+}
+
+.cover_content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Facebook_New>h1{
+    text-align: center;
+}
+
+.New_Content{
+    width: 45%;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.New_Content a{
+    text-decoration: none;
+    color: black;
+}
+
+.New_Content a:hover{
+    color: orangered;
+}
+
+.New_Content .link_read{
+    color: orangered;
+}
+
+.New_Content_Picture{
+    overflow: hidden;
+    height: 160px;
+}
+
+.New_Content_Picture img{
+    width: 100%;
+    transition: 1s;
+}
+.New_Content_Picture img:hover{
+    transform: scale(1.5);
+}
+
+.New_Content_Text h1{
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.New_Content_Text p{
+    margin: 5px 0px;
+}
+
+.button_XemThem{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.button_XemThem button{
+    width: 200px;
+    height: 40px;
+    background-color: orangered;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    border: none;
+}
+
+/* phần đuôi */
+footer{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(90, 89, 89);
+}
+
+.Footer_Row_1{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.Footer_Row_1 img{
+    width: 40px;
+}
+
+.Footer_Row_1 .Footer_Column_1{
+    width: 300px;
+}   
+
+.Footer_Row_1 .Footer_Column_1 img{
+    width: 100%;
+}
+
+.Footer_Row_1 .Footer_Column_1 button{
+    width: 100%;
+    background-color: rgb(213, 105, 10);
+    color: black;
+    font-weight: bold;
+    font-size: 25px ;
+    padding: 5px;
+    border: 0px;
+}
+
+.Footer_Row_1 .Footer_Content{
+    display: flex;
+    flex-direction: column;
+}
+
+.Footer_Row_1 .Footer_Content a{
+    text-decoration: none;
+    color: white;
+    margin: 5px 0px;
+}
+
+.Footer_Row_1 .Footer_Content a:hover{
+    color: rgb(247, 111, 62);
+}
+
+.Footer_Row_1 h1{
+    margin-top: 30px;
+}
+.Footer_Row_1 .Input_email_footer{
+    display: flex;
+    align-items: center;
+}
+
+.Footer_Row_1 .Input_email_footer input{
+    width: 80%;
+    height: 40px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.Footer_Row_1 .Input_email_footer button{
+    width: 20%;
+    height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orangered;
+    border: none;
+}
+.Footer_Row_1 .Input_email_footer button img{
+    height: 30px;
+    width: auto;
+}
+
+.Footer_Row_2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(90, 89, 89) ;
+}
+
+.Footer_Row_2 img{
+    height: 200px;
+    margin-right: 50px;
+}
+.Logo_trademark img{
+    width: 150px;
+    opacity: 0.8;
+}
+
+
+/* Link Liên hệ */
+.Link_FB_TT_Y{
+    position: fixed;
     top: 300px;
+    right: 0px;
+    width: 40px;
+    height: 120px;
+    background-color: rgb(247, 111, 62);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    padding-top: 5px;
+}
+
+.Link_FB_TT_Y img{
+    width: 30px;
 }
