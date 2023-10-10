@@ -563,3 +563,15 @@ footer{
         .footer_2 p{
             font-size: 30px;
         }
+
+
+.color button{
+    width: 90%;
+    height: 90%;
+}
+    .color_1 button{
+        background-color: #eaeaea;
+    }
+    .color_2 button{
+        background-color: #00f64e;
+    }
