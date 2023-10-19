@@ -7,11 +7,11 @@ function color_white() {
     var mainImg = document.getElementById("mainImage");
 
     // THay đổi đường link các ảnh
-    mainImg.src = "../Picture/Img_shoes/_02_white.jpg";
-    secondImg1.src = "../Picture/Img_shoes/_02_white.jpg";
-    secondImg2.src = "../Picture/Img_shoes/_02_white.jpg";
-    secondImg3.src = "../Picture/Img_shoes/_03_white.jpg";
-    secondImg4.src = "../Picture/Img_shoes/_04_white.jpg";
+    mainImg.src = "../Picture/Img_shoes/01_white.jpg";
+    secondImg1.src = "../Picture/Img_shoes/01_white.jpg";
+    secondImg2.src = "../Picture/Img_shoes/02_white.jpg";
+    secondImg3.src = "../Picture/Img_shoes/03_white.jpg";
+    secondImg4.src = "../Picture/Img_shoes/04_white.jpg";
 }
 function color_Green() {
     // Lấy thẻ hình ảnh mục tiêu theo id
@@ -22,9 +22,9 @@ function color_Green() {
     var mainImg = document.getElementById("mainImage");
 
     // THay đổi đường link các ảnh
-    mainImg.src = "../Picture/Img_shoes/_01_Green.jpeg";
-    secondImg1.src = "../Picture/Img_shoes/_01_Green.jpeg";
-    secondImg2.src = "../Picture/Img_shoes/_02_Green.jpeg";
-    secondImg3.src = "../Picture/Img_shoes/_03_Green.jpeg";
-    secondImg4.src = "../Picture/Img_shoes/_04_Green.jpeg";
+    mainImg.src = "../Picture/Img_shoes/01_Green.jpg";
+    secondImg1.src = "../Picture/Img_shoes/01_Green.jpg";
+    secondImg2.src = "../Picture/Img_shoes/02_Green.jpg";
+    secondImg3.src = "../Picture/Img_shoes/03_Green.jpg";
+    secondImg4.src = "../Picture/Img_shoes/04_Green.jpg";
 }
